@@ -10,5 +10,12 @@ const project = new typescript.TypeScriptProject({
   // deps: [],                /* Runtime dependencies of this module. */
   // devDeps: [],             /* Build dependencies for this module. */
   packageName: "actions-testing",
+  buildWorkflowOptions: {
+    workflowTriggers: {
+      push: {
+        branches: ["main"],
+      },
+    },
+  },
 });
 project.synth();
