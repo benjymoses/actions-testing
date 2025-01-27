@@ -1,7 +1,7 @@
-import { Hello } from "../src";
+import { Hello } from '../src';
 
-test("hello", () => {
+test('hello', () => {
   expect(new Hello().sayHello()).toBe(
-    "hello, world, does this bump patch version?"
+    'hello, world, does this bump patch version?',
   );
 });
