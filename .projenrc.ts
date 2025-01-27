@@ -17,5 +17,6 @@ const project = new typescript.TypeScriptProject({
       },
     },
   },
+  majorVersion: 1,
 });
 project.synth();
