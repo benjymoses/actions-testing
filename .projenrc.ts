@@ -1,4 +1,5 @@
 import { typescript } from 'projen';
+import { NpmAccess } from 'projen/lib/javascript';
 const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
   name: 'actions-testing',
@@ -9,6 +10,8 @@ const project = new typescript.TypeScriptProject({
   // deps: [],                /* Runtime dependencies of this module. */
   // devDeps: [],             /* Build dependencies for this module. */
   packageName: 'actions-testing',
+  releaseToNpm: true,
+  npmAccess: NpmAccess.PUBLIC,
   buildWorkflowOptions: {
     workflowTriggers: {
       push: {
