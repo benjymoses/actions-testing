@@ -1,6 +1,10 @@
 {
   "name": "actions-testing",
   "description": "This project is to learn and understand how Projen projects use Github actions to publish packages to NPM.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjymoses/actions-testing.git/"
+  },
   "scripts": {
     "build": "npx projen build",
     "clobber": "npx projen clobber",

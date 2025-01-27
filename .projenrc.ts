@@ -2,6 +2,7 @@ import { typescript } from "projen";
 const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: "main",
   name: "actions-testing",
+  repository: "https://github.com/benjymoses/actions-testing.git/",
   projenrcTs: true,
   release: false,
   description:
