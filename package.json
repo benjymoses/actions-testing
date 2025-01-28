@@ -43,8 +43,13 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
+  "keywords": [
+    "experiment",
+    "github actions",
+    "projen"
+  ],
   "main": "lib/index.js",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "homepage": "https://www.example.com",
   "publishConfig": {
     "access": "public"

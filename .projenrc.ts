@@ -13,6 +13,9 @@ const project = new typescript.TypeScriptProject({
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,
   homepage: 'https://www.example.com',
+  license: 'MIT',
+  copyrightOwner: 'Ben Moses',
+  keywords: ['experiment', 'github actions', 'projen'],
   buildWorkflowOptions: {
     workflowTriggers: {
       push: {
@@ -22,4 +25,6 @@ const project = new typescript.TypeScriptProject({
   },
   majorVersion: 1,
 });
+
+project.gitignore.addPatterns('.bashrc');
 project.synth();
