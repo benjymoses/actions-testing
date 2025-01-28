@@ -12,6 +12,7 @@ const project = new typescript.TypeScriptProject({
   packageName: 'actions-testing',
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,
+  homepage: 'https://www.example.com',
   buildWorkflowOptions: {
     workflowTriggers: {
       push: {
