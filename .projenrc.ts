@@ -26,5 +26,10 @@ const project = new typescript.TypeScriptProject({
   majorVersion: 1,
 });
 
-project.gitignore.addPatterns('.bashrc');
+const ignoreFiles = ['.bashrc'];
+ignoreFiles.forEach((ignoreFile) => {
+  project.gitignore.addPatterns(ignoreFile);
+  project.npmignore?.addPatterns(ignoreFile);
+});
+
 project.synth();
